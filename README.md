@@ -14,6 +14,3 @@ This repo includes **carefully curated interview questions** along with **clear 
 ✅ Suitable for **junior to senior-level developers**
 
 ---
-
-## 📂 Folder Structure
-
