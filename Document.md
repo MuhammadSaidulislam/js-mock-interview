@@ -4,6 +4,25 @@ Common Questions:
 
 -- What is the difference between var, let, and const?
 
+Ans: 
+Scope = where in the code the variable is accessible.
+var
+Function-scoped (available inside the function it’s declared in, or globally if outside a function).
+Ignores block scope (like {} in if or for).
+let
+Block-scoped (only accessible inside { ... } where it’s declared).
+const
+Block-scoped (same as let).
+
+if (true) {
+  var a = 1; // function/global scoped
+  let b = 2; // block scoped
+  const c = 3; // block scoped
+}
+console.log(a); // ✅ works
+console.log(b); // ❌ ReferenceError
+console.log(c); // ❌ ReferenceError
+
 -- Explain hoisting in JavaScript.
 
 -- What are closures and how do they work?
